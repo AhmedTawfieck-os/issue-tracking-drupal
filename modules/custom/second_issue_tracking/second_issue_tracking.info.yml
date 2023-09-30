@@ -1,0 +1,6 @@
+name: 'Second Issue tracking'
+type: module
+description: 'Other way to implement issues content type.'
+core_version_requirement: ^9
+dependencies:
+  - node
