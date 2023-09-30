@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+id: node.duedate
+field_name: duedate
+entity_type: node
+type: datetime_timestamp
+settings:
+  datetime_type: date
+  datetime_format: Y-m-d
+module: datetime
+locked: false
+cardinality: 1

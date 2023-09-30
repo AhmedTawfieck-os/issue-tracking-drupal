@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  core:
+  - drupal:datetime
+  enforced:
+    module:
+      - issue_tracking
+name: 'issue_tracking'
+type: issue_tracking
+description: 'Content type that can be used to add new <em>Issues</em>.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

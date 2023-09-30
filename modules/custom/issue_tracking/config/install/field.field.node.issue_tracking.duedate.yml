@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.duedate
+    - node.type.issue_tracking
+  module:
+    - datetime
+id: node.issue_tracking.duedate
+field_name: duedate
+entity_type: node
+bundle: issue_tracking
+label: 'Due date'
+description: 'Enter the due date for this issue.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_label: true
+  display_description: true
+  display_value: true
+  text_processing: 0
+  field_permissions: {  }
+field_type: datetime_timestamp

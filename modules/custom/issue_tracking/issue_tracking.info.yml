@@ -1,0 +1,6 @@
+name: 'Issue tracking'
+type: module
+description: 'Adds issues content type.'
+core_version_requirement: ^9
+dependencies:
+  - node

@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.issue_tracking.body
+        - field.field.node.issue_tracking.issue_type 
+        - field.field.node.issue_tracking.priority 
+        - field.field.node.issue_tracking.status
+        - field.field.node.issue_tracking.duedate
+        - field.field.node.issue_tracking.assignee
+        - node.type.issue_tracking
+    module:
+        - text
+        - user
+
+id: node.issue_tracking.default
+targetEntityType: node
+bundle: issue_tracking
+mode: default
+content:
+    assignee: 
+        weight: 3
+        label: 'Assignee'
+        type: entity_reference_label
+        settings:
+            link: true
+    duedate:
+        weight: 5
+        label: 'Due date'
+        type: datetime_default
+        settings:
+            format_type: medium
+    status:
+        label: hidden
+        type: checkboxes 
+        weight: 0
+        settings: {  }
+        third_party_settings: {  }
+    priority: 
+        label: hidden
+        type: checkboxes 
+        weight: 0
+        settings: {  }
+        third_party_settings: {  }
+    issue_type: 
+        label: hidden
+        type: checkboxes 
+        weight: 0
+        settings: {  }
+        third_party_settings: {  }
+    body:
+        label: hidden
+        type: text_default
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100  
+hidden: {  }

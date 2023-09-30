@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_type
+    - node.type.issue_tracking
+  module:
+    - text
+id: node.issue_tracking.issue_type
+field_name: issue_type
+entity_type: node
+bundle: issue_tracking
+label: 'Issue type'
+description: 'Check this box to choose issue type'
+required: true
+translatable: true
+default_value: { 0: { value: false } }
+default_value_callback: ''
+settings:
+  display_label: true
+  display_description: true
+  display_value: true
+  text_processing: 0
+  field_permissions: {  }
+field_type: checkboxes

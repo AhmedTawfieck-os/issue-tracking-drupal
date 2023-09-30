@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.issue_type
+field_name: issue_type
+entity_type: node
+type: checkboxes
+settings:
+  default_value: false
+  display_label: true
+  display_description: true
+  on_label: 'Yes'
+  off_label: 'No'
+  options:
+    option1: 'New Feature'
+    option2: 'Change'
+    option3: 'Task'
+    option4: 'Bug'
+    option5: 'Improvement'
+module: text
+locked: false
+cardinality: 1
